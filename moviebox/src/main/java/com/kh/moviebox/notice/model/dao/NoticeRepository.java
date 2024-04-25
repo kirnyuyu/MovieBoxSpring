@@ -24,7 +24,7 @@ public class NoticeRepository {
 
 	public int increaseCount(SqlSessionTemplate sqlSession, int noticeNo) {
 		return sqlSession.update("noticeMapper.increaseCount", noticeNo);
-	} 
+	}
 
 	public Notice selectNotice(SqlSessionTemplate sqlSession, int noticeNo) {
 		return sqlSession.selectOne("noticeMapper.selectNotice", noticeNo);
